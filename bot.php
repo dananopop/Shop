@@ -17,7 +17,7 @@ $bot_directory="http://fbf55e78.ngrok.io/telegram-bot-course/project3/";
 if(array_key_exists('message', $update)){
     $user_id=$update['message']['from']['id'];
     $chat_id=$update['message']['chat']['id'];
-    $message_id=$update['message']['message_id'];
+    $message_id=$update['message']['message_id']
     $username=(array_key_exists('username',$update['message']['from']))?$update['message']['from']['username']:null;
     $last_name=(array_key_exists('last_name',$update['message']['from']))?$update['message']['from']['last_name']:null;
     $first_name=$update['message']['from']['first_name'];
