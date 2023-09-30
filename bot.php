@@ -70,6 +70,7 @@ if(strpos($text, '/start')!==false){
 
                 case '🛍 محصولات 🛍': {
                     $category=getCategory();
+                    $dbname = "database_name";
                     $keys = array("inline_keyboard" => array());
                     foreach ($category as $cat){
                         $keys['inline_keyboard'][][]=array('text'=>$cat['cat_name'],'callback_data'=>'/category_'.$cat['id']);
