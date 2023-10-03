@@ -66,6 +66,7 @@ if(strpos($text, '/start')!==false){
                     message($chat_id, $msg,goToMainMenu());
                     setStep($user_id, 'search_product');
                 }
+                } else {
                     break;
 
                 case '🛍 محصولات 🛍': {
