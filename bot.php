@@ -3,7 +3,7 @@ require_once 'function.php';
 global $db;
 date_default_timezone_set("Asia/Tehran");
 $input=file_get_contents("php://input");
-file_put_contents('result.txt', $input.PHP_EOL.PHP_EOL,FILE_APPEND);
+file_put_contents('result.xt', $input.PHP_EOL.PHP_EOL,FILE_APPEND);
 $update=json_decode($input,true);
 $api_url="https://api.telegram.org/bot".API_TOKEN."/";
 ///////////////////////////// Admin info /////////////////////////////
