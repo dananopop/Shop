@@ -40,6 +40,16 @@ if(strpos($text, '/start')!==false){
         $query="select * from users WHERE user_id=".$user_id;
         $res=mysqli_query($db, $query);
         $num=mysqli_num_rows($res);
+        <?php
+$token = 'YOUR_BOT_TOKEN';
+
+$update = json_decode(file_get_contents('php://input'), true);
+
+if ($update) {
+    // Process the received update
+}
+?>
+
         if($num==0){
             $hash_id=md5($user_id);
             $query="insert into users(user_id,hash_id,first_name,last_name,username,step) VALUES( '$user_id' ,'$hash_id','$first_name','$last_name','$username','home')";
