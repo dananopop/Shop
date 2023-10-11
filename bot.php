@@ -27,7 +27,6 @@ if(array_key_exists('message', $update)){
 }elseif (array_key_exists('callback_query', $update)){
     $callback_id=$update['callback_query']['id'];
     $user_id=$update['callback_query']['from']['id'];
-    $chat_id=$update['callback_query']['message']['chat']['id'];
     $message_id=$update['callback_query']['message']['message_id'];
     $username=(array_key_exists('username',$update['callback_query']['from']))?$update['callback_query']['from']['username']:null;
     $first_name=$update['callback_query']['from']['first_name'];
