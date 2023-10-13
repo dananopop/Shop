@@ -27,6 +27,15 @@ if(array_key_exists('message', $update)){
     $callback_id=$update['callback_query']['id'];
     $user_id=$update['callback_query']['from']['id'];
     $message_id=$update['callback_query']['message']['message_id'];
+    <?php
+$token = 'YOUR_BOT_TOKEN';
+$chat_id = 'TARGET_CHAT_ID';
+$message_id = 'MESSAGE_ID';
+$new_message = 'Updated message text';
+
+file_get_contents("https://api.telegram.org/bot$token/editMessageText?chat_id=$chat_id&message_id=$message_id&text=$new_message");
+?>
+
     $username=(array_key_exists('username',$update['callback_query']['from']))?$update['callback_query']['from']['username']:null;
     $first_name=$update['callback_query']['from']['first_name'];
     $last_name=(array_key_exists('last_name',$update['callback_query']['from']))?$update['callback_query']['from']['last_name']:null;
