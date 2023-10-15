@@ -109,7 +109,6 @@ if ($update) {
                         foreach ($cart_products as $productID){
                             $info=getProduct($productID);
                             $product_array[]=$info;
-                            $all_price+=$info['price'];
                         }
                         $result="👇 محصولات موجود در سبد 👇".PHP_EOL.PHP_EOL;
                         $cnt=($num>=$limit_musics)?$limit_musics:$num;
@@ -136,7 +135,6 @@ if ($update) {
                     break;
 
                 case '🗂 سابقه ی خریدها 🗂': {
-                    action($chat_id,'typing');
                     $payedCart_info=getPayedCart($user_id);
 
                     if($payedCart_info!=null){
