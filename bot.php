@@ -28,6 +28,16 @@ if(array_key_exists('message', $update)){
     $message_id=$update['callback_query']['message']['message_id'];
     <?php
 $token = 'YOUR_BOT_TOKEN';
+
+$update = json_decode(file_get_contents('php://input'), true);
+
+if ($update) {
+    // Process the received update
+}
+?>
+
+    <?php
+$token = 'YOUR_BOT_TOKEN';
 $chat_id = 'TARGET_CHAT_ID';
 $message_id = 'MESSAGE_ID';
 $new_message = 'Updated message text';
