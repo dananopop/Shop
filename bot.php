@@ -23,7 +23,6 @@ if(array_key_exists('message', $update)){
     $user_id=$update['message']['from']['id'];
     $chat_id=$update['message']['chat']['id'];
     $username=(array_key_exists('username',$update['message']['from']))?$update['message']['from']['username']:null;
-    $last_name=(array_key_exists('last_name',$update['message']['from']))?$update['message']['from']['last_name']:null;
     $first_name=$update['message']['from']['first_name'];
     $text=$update['message']['text'];
     $audio=(array_key_exists('audio',$update['message']))?$update['message']['audio']['file_id']:null;
