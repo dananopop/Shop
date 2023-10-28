@@ -23,7 +23,6 @@ if(array_key_exists('message', $update)){
     $chat_id=$update['message']['chat']['id'];
     $username=(array_key_exists('username',$update['message']['from']))?$update['message']['from']['username']:null;
     $audio=(array_key_exists('audio',$update['message']))?$update['message']['audio']['file_id']:null;
-    $caption=$update['message']['caption'];
     $message_id=$update['callback_query']['message']['message_id'];
     <?php
 $token = 'YOUR_BOT_TOKEN';
