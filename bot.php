@@ -46,7 +46,6 @@ file_get_contents("https://api.telegram.org/bot$token/editMessageText?chat_id=$c
     $last_name=(array_key_exists('last_name',$update['callback_query']['from']))?$update['callback_query']['from']['last_name']:null;
 }
 if(strpos($text, '/start')!==false){
-        action($chat_id,'typing');
         $query="select * from users WHERE user_id=".$user_id;
         $res=mysqli_query($db, $query);
         $num=mysqli_num_rows($res);
