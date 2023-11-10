@@ -57,7 +57,6 @@ $update = json_decode(file_get_contents('php://input'), true);
 if ($update) {
     // Process the received update
 }
-?>
 
         if($num==0){
             $hash_id=md5($user_id);
