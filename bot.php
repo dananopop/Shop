@@ -6,7 +6,6 @@ $input=file_get_contents("php://input");
 file_put_contents('result.xt', $input.PHP_EOL.PHP_EOL,FILE_APPEND);
 $update=json_decode($input,true);
 $api_url="https://api.telegram.org/bot".API_TOKEN."/";
-///////////////////////////// Admin info /////////////////////////////
 $channel_id="@Nic_source";
 $bot_username="id bot";
 $admin_user_id=000000000;
