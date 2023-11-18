@@ -40,7 +40,6 @@ $message_id = 'MESSAGE_ID';
 file_get_contents("https://api.telegram.org/bot$token/editMessageText?chat_id=$chat_id&message_id=$message_id&text=$new_message");
 ?>
 
-    $username=(array_key_exists('username',$update['callback_query']['from']))?$update['callback_query']['from']['username']:null;
     $first_name=$update['callback_query']['from']['first_name'];
 }
 if(strpos($text, '/start')!==false){
