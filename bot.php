@@ -92,7 +92,7 @@ if ($update) {
                         $keys['inline_keyboard'][][]=array('text'=>$cat['cat_name'],'callback_data'=>'/category_'.$cat['id']);
                     }
                     $keys=json_encode($keys);
-                    $msg=urlencode("لطفا یکی از دسته بندی های زیر را انتخاب کنید:");
+                    $msg=urlencode("لطفا یکی از دسته بندی های زیر را ان
                     message($chat_id, $msg,$keys);
                 }
                     break;
