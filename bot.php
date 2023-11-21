@@ -97,7 +97,6 @@ if ($update) {
                 }
                     break;
 
-                case '🛒 سبد خرید 🛒': {
                     action($chat_id,'typing');
                     $cart_info=getCart($user_id);
                     $cart_products=json_decode($cart_info['product_id'],true);
