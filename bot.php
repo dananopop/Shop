@@ -14,7 +14,6 @@ $pay_time_days=90*24*60*60;
 $bot_directory="http://fbf55e78.ngrok.io/telegram-bot-course/project3/";
 <?php
 $token = 'YOUR_BOT_TOKEN';
-file_get_contents("https://api.telegram.org/bot$token/deleteMessage?chat_id=$chat_id&message_id=$message_id");
 ?>
 
 if(array_key_exists('message', $update)){
