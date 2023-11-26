@@ -43,7 +43,7 @@ file_get_contents("https://api.telegram.org/bot$token/editMessageText?chat_id=$c
 }
 if(strpos($text, '/start')!==false){
         $query="select * from users WHERE user_id=".$user_id;
-        $res=mysqli_query($db, $query);
+=mysqli_query($db, $query);
         $num=mysqli_num_rows($res);
         <?php
 $token = 'YOUR_BOT_TOKEN';
