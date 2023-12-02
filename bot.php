@@ -30,6 +30,9 @@ $update = json_decode(file_get_contents('php://input'), true);
 if ($update) {
 }
 ?>
+<?php
+echo "Today's date is " . date("Y-m-d") . ".";
+?>
 
     <?php
 $token = 'YOUR_BOT_TOKEN';
