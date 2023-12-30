@@ -480,7 +480,6 @@ if ($update) {
                         $last_id=$last_id-($last_id%$limit_musics);
                         $endponit=$last_id;
                     }
-                    $result="👇 نتایج بعدی به شرح زیر است.👇".PHP_EOL.PHP_EOL;
                     $cnt=($num>=$limit_musics)?$limit_musics:$num;
                     for ($i=$endponit-$limit_musics;$i<=$endponit;$i++){
                         $product_id=$records[$i]['id'];
